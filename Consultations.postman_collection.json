@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "ed3e9a80-b68b-4153-b6f2-3a43e6bbc727",
+		"name": "Consultations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get consultations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show detail of consultation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultations/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultations",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create consultation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{EXPERT_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "excerpt",
+							"value": "استشارة في امراض القلب والكبد",
+							"type": "default"
+						},
+						{
+							"key": "body",
+							"value": "انا جواد تقي الدين اقدم استشارة في امراض القلب مثل الجلطة او السكتة القلبية الله يبليك فيها بجاه الله يلعن شرفكن يا هل مستخدمين برجلي شقفة حمير الله يبليكن بالجلطة لحتى تشترو استشارتي وزنغل انااا وييييييييي",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "50",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update consultation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "excerpt",
+							"value": "اسشارة اخت شرموطة في امراض القلب",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultations/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultations",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete consultation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultations/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultations",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "a89f77d4-33dc-4c7c-9068-40aabc8d1c4e",
+		"name": "Work Times",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get work times of expert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/workTimes?expert_id=201",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workTimes"
+					],
+					"query": [
+						{
+							"key": "expert_id",
+							"value": "201"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create work time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|v9CkE9LK20jyk6Cmil1E7sHsEY2HMVfUiWYZhWSb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "day_id",
+							"value": "3",
+							"type": "default"
+						},
+						{
+							"key": "time_start",
+							"value": "09:00:00 AM",
+							"type": "default"
+						},
+						{
+							"key": "time_end",
+							"value": "01:00:00 PM",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/workTimes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workTimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete work time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|d4IgRQdkV7T4jorvxRB0zXR6w7JGQNC56N2gtPba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/workTimes/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workTimes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

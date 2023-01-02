@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "cca1b872-f474-4b6d-8d9b-1d15dc7e51db",
+		"name": "free time available",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get free time of expert to make a booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{USER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/availableTime?expert_id=201",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"availableTime"
+					],
+					"query": [
+						{
+							"key": "expert_id",
+							"value": "201"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

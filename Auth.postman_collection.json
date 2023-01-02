@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "775d7817-5501-43e4-8f61-8672325e5739",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "samah",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "taki alden",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "samah.taki.alden@gmail.com",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "samah090909",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "0948966979",
+							"description": "nullble",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "syria",
+							"description": "nullble",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"description": "nullble",
+							"type": "file",
+							"src": "/C:/Users/jawad/Desktop/me/image/Jawad/20220727_234748.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "expert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "jawad",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "last_name",
+									"value": "taki alden",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "jawad.taki.alden@gmail.com",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "jawad090909",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "role_id",
+									"value": "2",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "0948966979",
+									"description": "nullble",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "syria",
+									"description": "nullble",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"description": "nullble",
+									"type": "file",
+									"src": "/C:/Users/jawad/Desktop/me/image/Jawad/20220727_234748.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 Dec 2022 05:36:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 Dec 2022 05:36:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"request was successful\",\n    \"message\": null,\n    \"data\": {\n        \"user\": {\n            \"first_name\": \"jawad\",\n            \"last_name\": \"taki alden\",\n            \"email\": \"jawad.taki.alden@gmail.com\",\n            \"role_id\": \"2\",\n            \"phone\": \"0948966979\",\n            \"address\": \"syria\",\n            \"image\": \"C:\\\\Users\\\\jawad\\\\Desktop\\\\me\\\\laravel app\\\\laracast3\\\\public\\\\images/63afca565b2ae_image.jpg\",\n            \"updated_at\": \"2022-12-31T05:36:22.000000Z\",\n            \"created_at\": \"2022-12-31T05:36:22.000000Z\",\n            \"id\": 201\n        },\n        \"token\": \"1|v9CkE9LK20jyk6Cmil1E7sHsEY2HMVfUiWYZhWSb\"\n    }\n}"
+				},
+				{
+					"name": "user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "samah",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "last_name",
+									"value": "taki alden",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "samah.taki.alden@gmail.com",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "samah090909",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "role_id",
+									"value": "1",
+									"description": "required",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "0948966979",
+									"description": "nullble",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "syria",
+									"description": "nullble",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"description": "nullble",
+									"type": "file",
+									"src": "/C:/Users/jawad/Desktop/me/image/Jawad/20220727_234748.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 Dec 2022 05:39:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 Dec 2022 05:39:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"request was successful\",\n    \"message\": null,\n    \"data\": {\n        \"user\": {\n            \"first_name\": \"samah\",\n            \"last_name\": \"taki alden\",\n            \"email\": \"samah.taki.alden@gmail.com\",\n            \"role_id\": \"1\",\n            \"phone\": \"0948966979\",\n            \"address\": \"syria\",\n            \"image\": \"C:\\\\Users\\\\jawad\\\\Desktop\\\\me\\\\laravel app\\\\laracast3\\\\public\\\\images/63afcb0f42c3a_image.jpg\",\n            \"updated_at\": \"2022-12-31T05:39:27.000000Z\",\n            \"created_at\": \"2022-12-31T05:39:27.000000Z\",\n            \"id\": 202\n        },\n        \"token\": \"2|Np5XESnP4KJpzJiyRyc0qSYtyu4VkEN1HFq2UvaF\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jawad.taki.alden@gmail.com",
+							"description": "required",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "jawad090909",
+							"description": "required",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|xD4MZgAQMDThfVkINspQyRXCEZmbtFeNqRY8LBnb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
